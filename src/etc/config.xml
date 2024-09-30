@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <JosephLeedy_CustomFees>
+            <version>0.1.0.0</version>
+        </JosephLeedy_CustomFees>
+    </modules>
+</config>
