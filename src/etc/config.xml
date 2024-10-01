@@ -16,6 +16,11 @@
                 <class>JosephLeedy_CustomFees_Helper</class>
             </custom_fees>
         </helpers>
+        <models>
+            <custom_fees>
+                <class>JosephLeedy_CustomFees_Model</class>
+            </custom_fees>
+        </models>
     </global>
     <default>
         <sales>
