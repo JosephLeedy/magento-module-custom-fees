@@ -5,4 +5,23 @@
             <version>0.1.0.0</version>
         </JosephLeedy_CustomFees>
     </modules>
+    <global>
+        <blocks>
+            <custom_fees>
+                <class>JosephLeedy_CustomFees_Block</class>
+            </custom_fees>
+        </blocks>
+        <helpers>
+            <custom_fees>
+                <class>JosephLeedy_CustomFees_Helper</class>
+            </custom_fees>
+        </helpers>
+    </global>
+    <default>
+        <sales>
+            <custom_order_fees>
+                <custom_fees>a:1:{s:18:"_1727736651123_123";a:3:{s:4:"code";s:11:"example_fee";s:5:"title";s:11:"Example Fee";s:5:"value";s:4:"0.00";}}</custom_fees>
+            </custom_order_fees>
+        </sales>
+    </default>
 </config>

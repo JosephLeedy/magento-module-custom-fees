@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <sales>
+            <groups>
+                <custom_order_fees translate="label" module="custom_fees">
+                    <label>Custom Order Fees</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>500</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <custom_fees translate="label">
+                            <label>Custom Fees</label>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_model>custom_fees/system_config_form_field_customFees</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                        </custom_fees>
+                    </fields>
+                </custom_order_fees>
+            </groups>
+        </sales>
+    </sections>
+</config>
