@@ -20,7 +20,23 @@
             <custom_fees>
                 <class>JosephLeedy_CustomFees_Model</class>
             </custom_fees>
+            <sales>
+                <rewrite>
+                    <quote_address_total_collector>JosephLeedy_CustomFees_Rewrite_Mage_Sales_Quote_Address_Total_Collector</quote_address_total_collector>
+                </rewrite>
+            </sales>
         </models>
+        <sales>
+            <quote>
+                <totals>
+                    <custom_fees>
+                        <class>custom_fees/total_quote_customFees</class>
+                        <before>shipping</before>
+                        <after>subtotal</after>
+                    </custom_fees>
+                </totals>
+            </quote>
+        </sales>
     </global>
     <default>
         <sales>
