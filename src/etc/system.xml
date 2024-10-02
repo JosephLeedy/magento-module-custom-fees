@@ -3,6 +3,18 @@
     <sections>
         <sales>
             <groups>
+                <totals_sort>
+                    <fields>
+                        <custom_fees translate="label">
+                            <label>Custom Fees</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </custom_fees>
+                    </fields>
+                </totals_sort>
                 <custom_order_fees translate="label" module="custom_fees">
                     <label>Custom Order Fees</label>
                     <frontend_type>text</frontend_type>
