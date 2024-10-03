@@ -2,7 +2,7 @@
 <config>
     <modules>
         <JosephLeedy_CustomFees>
-            <version>0.1.0.0</version>
+            <version>0.2.0.0</version>
         </JosephLeedy_CustomFees>
     </modules>
     <global>
@@ -11,6 +11,18 @@
                 <class>JosephLeedy_CustomFees_Block</class>
             </custom_fees>
         </blocks>
+        <fieldsets>
+            <sales_convert_quote>
+                <custom_fees>
+                    <to_order>*</to_order>
+                </custom_fees>
+            </sales_convert_quote>
+            <sales_convert_order>
+                <custom_fees>
+                    <to_quote>*</to_quote>
+                </custom_fees>
+            </sales_convert_order>
+        </fieldsets>
         <helpers>
             <custom_fees>
                 <class>JosephLeedy_CustomFees_Helper</class>
@@ -26,6 +38,14 @@
                 </rewrite>
             </sales>
         </models>
+        <resources>
+            <custom_fees_setup>
+                <setup>
+                    <module>JosephLeedy_CustomFees</module>
+                    <class>JosephLeedy_CustomFees_Model_Resource_Setup</class>
+                </setup>
+            </custom_fees_setup>
+        </resources>
         <sales>
             <quote>
                 <totals>

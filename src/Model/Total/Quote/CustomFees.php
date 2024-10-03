@@ -33,19 +33,26 @@ class JosephLeedy_CustomFees_Model_Total_Quote_CustomFees extends Mage_Sales_Mod
 
         $store = $quote->getStore();
         list($baseCustomFees, $localCustomFees) = $this->getCustomFees($store);
+        $customFees = $baseCustomFees;
 
         array_walk(
             $baseCustomFees,
-            static function (array $baseCustomFee) use ($address) {
+            static function (array $baseCustomFee, $key) use ($address, &$customFees) {
                 $address->setBaseTotalAmount($baseCustomFee['code'], $baseCustomFee['value']);
+
+                $customFees[$key]['base_value'] = (float)$baseCustomFee['value'];
             }
         );
         array_walk(
             $localCustomFees,
-            static function (array $localCustomFee) use ($address) {
+            static function (array $localCustomFee, $key) use ($address, &$customFees) {
                 $address->setTotalAmount($localCustomFee['code'], $localCustomFee['value']);
+
+                $customFees[$key]['value'] = (float)$localCustomFee['value'];
             }
         );
+
+        $quote->setData('custom_fees', serialize($customFees));
 
         return $this;
     }
@@ -119,5 +126,4 @@ class JosephLeedy_CustomFees_Model_Total_Quote_CustomFees extends Mage_Sales_Mod
             $localCustomFees
         ];
     }
-
 }
