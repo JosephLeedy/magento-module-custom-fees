@@ -51,8 +51,8 @@
                 <totals>
                     <custom_fees>
                         <class>custom_fees/total_quote_customFees</class>
-                        <before>shipping</before>
-                        <after>subtotal</after>
+                        <before>grand_total</before>
+                        <after>tax</after>
                     </custom_fees>
                 </totals>
             </quote>
@@ -61,7 +61,7 @@
     <default>
         <sales>
             <totals_sort>
-                <custom_fees>15</custom_fees>
+                <custom_fees>90</custom_fees>
             </totals_sort>
             <custom_order_fees>
                 <custom_fees>a:1:{s:18:"_1727736651123_123";a:3:{s:4:"code";s:11:"example_fee";s:5:"title";s:11:"Example Fee";s:5:"value";s:4:"0.00";}}</custom_fees>
