@@ -56,6 +56,15 @@
                     </custom_fees>
                 </totals>
             </quote>
+            <order_invoice>
+                <totals>
+                    <custom_fees>
+                        <class>custom_fees/total_invoice_customFees</class>
+                        <before>grand_total</before>
+                        <after>tax</after>
+                    </custom_fees>
+                </totals>
+            </order_invoice>
         </sales>
     </global>
     <default>
