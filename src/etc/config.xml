@@ -77,4 +77,13 @@
             </updates>
         </layout>
     </frontend>
+    <adminhtml>
+        <layout>
+            <updates>
+                <custom_fees module="JosephLeedy_CustomFees">
+                    <file>custom_fees.xml</file>
+                </custom_fees>
+            </updates>
+        </layout>
+    </adminhtml>
 </config>
