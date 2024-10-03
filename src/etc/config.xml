@@ -68,4 +68,13 @@
             </custom_order_fees>
         </sales>
     </default>
+    <frontend>
+        <layout>
+            <updates>
+                <custom_fees module="JosephLeedy_CustomFees">
+                    <file>custom_fees.xml</file>
+                </custom_fees>
+            </updates>
+        </layout>
+    </frontend>
 </config>

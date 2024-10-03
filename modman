@@ -1,2 +1,3 @@
 JosephLeedy_CustomFees.xml app/etc/modules
 src/ app/code/community/JosephLeedy/CustomFees
+design/frontend/base/default/layout/custom_fees.xml app/design/frontend/base/default/layout
