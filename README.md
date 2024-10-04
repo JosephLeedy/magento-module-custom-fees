@@ -4,6 +4,9 @@ _by Joseph Leedy_
 Custom Fees allows merchants to configure additional fees to be charged to 
 customers when orders are placed.
 
+**\*Note:** This extension is to be used with the Magento 1 platform. For 
+Magento 2/Adobe Commerce support, please see the [Magento 2 repository].
+
 ## Features
 
 - Allows fees to be configured with a label and amount to be added to an order
@@ -76,6 +79,7 @@ all rights reserved.
 - 1.0.0
   - Initial release
 
+[Magento 2 Repository]: https://github.com/JosephLeedy/magento2-module-custom-fees
 [releases]: https://github.com/JosephLeedy/magento-module-custom-fees/releases
 [repository]: https://github.com/JosephLeedy/magento-module-custom-fees
 [LICENSE]: ./LICENSE
