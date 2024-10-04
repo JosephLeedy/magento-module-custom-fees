@@ -23,7 +23,14 @@ This extension can be installed by downloading the latest code archive from the
 terminal on a Web server or in the desired installation location:
 
     cd /path/to/your/store
-    tar -xf [filename] # or unzip [filename]
+    mkdir -p tmp/custom-fees
+    tar -xf [filename] -C tmp/custom-fees # OR unzip -d tmp/custom-fees [filename]
+    mkdir -p app/code/community/JosephLeedy/CustomFees
+    cp tmp/custom-fees/src/* app/code/community/JosephLeedy/CustomFees
+    cp tmp/custom-fees/design/frontend/base/default/layout/custom_fees.xml app/design/frontend/base/default/layout
+    cp tmp/custom-fees/design/adminhtml/default/default/layout/custom_fees.xml app/design/adminhtml/default/default/layout
+    cp tmp/custom-fees/JosephLeedy_CustomFees.xml app/etc/modules
+    rm -rf tmp/custom-fees
     rm -rf var/cache/*
 
 **\* Note:** Be sure to replace `[filename]` with the actual name of the file 
